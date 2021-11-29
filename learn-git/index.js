@@ -1,3 +1,9 @@
-console.log("hello git");
+function Cat() {
+    this.stomach = [];
+}
 
-console.log("test git")
+Cat.prototype.eat = function(animal) {
+    this.stomach.push(animal)
+}
+
+module.exports = Cat;
